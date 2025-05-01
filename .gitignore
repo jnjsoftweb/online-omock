@@ -71,3 +71,7 @@ node_modules/
 
 # mcp
 mcp.json
+
+# Added by Claude Task Master
+tasks.json
+tasks/ 
