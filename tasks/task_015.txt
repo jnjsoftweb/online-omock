@@ -1,0 +1,11 @@
+# Task ID: 15
+# Title: Tailwind CSS를 사용한 반응형 UI 구현
+# Status: pending
+# Dependencies: 1,5
+# Priority: medium
+# Description: Tailwind CSS를 사용한 반응형 UI 컴포넌트 및 레이아웃 구현
+# Details:
+사용자 정의 테마가 있는 Tailwind CSS 구성 설정. 모든 화면 크기에 대한 반응형 레이아웃 생성. 게임 컨트롤 및 정보 패널 구현. 로비 및 방 목록 인터페이스 설계. 게임 설정 및 결과를 위한 모달 생성. 내비게이션 컴포넌트 구현. 다크/라이트 모드 지원 추가. 로딩 및 오류 상태 생성.
+
+# Test Strategy:
+다양한 화면 크기와 기기에서 UI 테스트. 반응형 동작 및 레이아웃 조정 검증. 접근성 및 사용성 확인.

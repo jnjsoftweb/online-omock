@@ -1,0 +1,11 @@
+# Task ID: 2
+# Title: 데이터베이스 스키마 설계 및 Prisma 설정
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Prisma ORM과 SQLite를 사용하여 데이터베이스 스키마 설계 및 구현
+# Details:
+Prisma ORM 설치 및 초기화. User, Game, Move, GameRoom, Statistic 모델을 포함하는 데이터베이스 스키마 설계. 마이그레이션 스크립트 생성 및 실행. Prisma Client 생성 및 NextJS와 통합. 기본 CRUD 작업을 위한 유틸리티 함수 구현.
+
+# Test Strategy:
+마이그레이션이 성공적으로 실행되는지 확인. 모든 모델에 대한 기본 CRUD 작업 테스트. 관계 및 제약 조건이 올바르게 작동하는지 검증.
