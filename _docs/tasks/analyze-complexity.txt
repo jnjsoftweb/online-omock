@@ -1,0 +1,224 @@
+[INFO] Initialized Perplexity client with OpenAI compatibility layer
+[INFO] Initialized Perplexity client with OpenAI compatibility layer
+  _____         _      __  __           _            
+ |_   _|_ _ ___| | __ |  \/  | __ _ ___| |_ ___ _ __ 
+   | |/ _` / __| |/ / | |\/| |/ _` / __| __/ _ \ '__|
+   | | (_| \__ \   <  | |  | | (_| \__ \ ||  __/ |   
+   |_|\__,_|___/_|\_\ |_|  |_|\__,_|___/\__\___|_|   
+                                                     
+by https://x.com/eyaltoledano
+╭───────────────────────────────────────────╮
+│                                           │
+│   Version: 1.5.0   Project: Task Master   │
+│                                           │
+╰───────────────────────────────────────────╯
+
+
+╭─────────────────────────────────────╮
+│                                     │
+│   Task Complexity Analysis Report   │
+│                                     │
+╰─────────────────────────────────────╯
+
+┌────────────────────┬──────────────────────────────────────────────────┐
+│ Generated:         │ 2025. 5. 1. 오후 4:40:06                         │
+│ Tasks Analyzed:    │ 20                                               │
+│ Threshold Score:   │ 5                                                │
+│ Project:           │ Your Project Name                                │
+│ Research-backed:   │ No                                               │
+└────────────────────┴──────────────────────────────────────────────────┘
+
+╭──────────────────────────────────╮
+│                                  │
+│   Complexity Distribution        │
+│                                  │
+│   Low (1-4): 1 tasks (5%)        │
+│   Medium (5-7): 16 tasks (80%)   │
+│   High (8-10): 3 tasks (15%)     │
+│                                  │
+╰──────────────────────────────────╯
+
+┌────────────┬─────────────────────────┬────────┬────────┬─────────────────────────────────────┐
+│ ID         │ Title                   │ Score  │ Subta… │ Expansion Command                   │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 13         │ 고급 AI 구현            │ 🔴 9   │ 5      │ task-master expand --id=13 --num=5  │
+│            │                         │        │        │ --prompt="Break down the advanced   │
+│            │                         │        │        │ AI implementation into specific     │
+│            │                         │        │        │ algorithm components including      │
+│            │                         │        │        │ minimax with alpha-beta pruning,    │
+│            │                         │        │        │ pattern recognition, opening book   │
+│            │                         │        │        │ development, and performance        │
+│            │                         │        │        │ optimization."                      │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 4          │ 핵심 게임 로직 구현     │ 🔴 8   │ 5      │ task-master expand --id=4 --num=5   │
+│            │                         │        │        │ --prompt="Detail the implementation │
+│            │                         │        │        │ steps for the core Gomoku game      │
+│            │                         │        │        │ logic, including board              │
+│            │                         │        │        │ representation, move validation,    │
+│            │                         │        │        │ win condition checking, turn        │
+│            │                         │        │        │ management, and rule variations."   │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 11         │ 실시간 멀티플레이어     │ 🔴 8   │ 5      │ task-master expand --id=11 --num=5  │
+│            │ 게임 흐름               │        │        │ --prompt="Break down the real-time  │
+│            │                         │        │        │ multiplayer game flow               │
+│            │                         │        │        │ implementation into specific        │
+│            │                         │        │        │ components including game session   │
+│            │                         │        │        │ initialization, turn management,    │
+│            │                         │        │        │ move validation and                 │
+│            │                         │        │        │ synchronization, and game           │
+│            │                         │        │        │ completion handling."               │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 3          │ 인증 시스템 구현        │ 🔴 7   │ 5      │ task-master expand --id=3 --num=5   │
+│            │                         │        │        │ --prompt="Break down the            │
+│            │                         │        │        │ authentication system               │
+│            │                         │        │        │ implementation into specific        │
+│            │                         │        │        │ components including NextAuth.js    │
+│            │                         │        │        │ setup, provider configuration, API  │
+│            │                         │        │        │ routes for user registration,       │
+│            │                         │        │        │ session management, and guest       │
+│            │                         │        │        │ authentication flow."               │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 5          │ HTML5 Canvas를 사용한   │ 🔴 7   │ 5      │ task-master expand --id=5 --num=5   │
+│            │ 게...                   │        │        │ --prompt="Break down the game board │
+│            │                         │        │        │ UI implementation using HTML5       │
+│            │                         │        │        │ Canvas into components like board   │
+│            │                         │        │        │ rendering, stone placement,         │
+│            │                         │        │        │ interactive elements, responsive    │
+│            │                         │        │        │ design, and visual feedback         │
+│            │                         │        │        │ mechanisms."                        │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 6          │ Socket.io 서버 구현     │ 🔴 7   │ 4      │ task-master expand --id=6 --num=4   │
+│            │                         │        │        │ --prompt="Detail the Socket.io      │
+│            │                         │        │        │ server implementation steps,        │
+│            │                         │        │        │ including server setup, connection  │
+│            │                         │        │        │ handling, event handlers for game   │
+│            │                         │        │        │ actions, room management, and error │
+│            │                         │        │        │ handling."                          │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 8          │ 게임 룸 시스템 구현     │ 🔴 7   │ 5      │ task-master expand --id=8 --num=5   │
+│            │                         │        │        │ --prompt="Detail the implementation │
+│            │                         │        │        │ steps for the game room system,     │
+│            │                         │        │        │ including API routes for room       │
+│            │                         │        │        │ management, room settings           │
+│            │                         │        │        │ configuration, Socket.io event      │
+│            │                         │        │        │ handling, and spectator mode        │
+│            │                         │        │        │ functionality."                     │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 15         │ 게임 규칙 변형 구현     │ 🔴 7   │ 4      │ task-master expand --id=15 --num=4  │
+│            │                         │        │        │ --prompt="Break down the            │
+│            │                         │        │        │ implementation of Gomoku rule       │
+│            │                         │        │        │ variations into specific components │
+│            │                         │        │        │ including Renju rules, three-three  │
+│            │                         │        │        │ restriction, and swap opening       │
+│            │                         │        │        │ rules."                             │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 18         │ 랭킹 및 매치메이킹      │ 🔴 7   │ 4      │ task-master expand --id=18 --num=4  │
+│            │ 시스템                  │        │        │ --prompt="Detail the implementation │
+│            │                         │        │        │ steps for the ELO-based ranking and │
+│            │                         │        │        │ matchmaking system, including       │
+│            │                         │        │        │ rating calculations, matchmaking    │
+│            │                         │        │        │ logic, leaderboard implementation,  │
+│            │                         │        │        │ and skill tier definitions."        │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 20         │ 배포 및 프로덕션 구성   │ 🔴 7   │ 5      │ task-master expand --id=20 --num=5  │
+│            │                         │        │        │ --prompt="Detail the implementation │
+│            │                         │        │        │ steps for production deployment,    │
+│            │                         │        │        │ including environment               │
+│            │                         │        │        │ configuration, database migration,  │
+│            │                         │        │        │ Socket.io scaling, security         │
+│            │                         │        │        │ implementation, and monitoring      │
+│            │                         │        │        │ setup."                             │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 2          │ 데이터베이스 스키마     │ 🟡 6   │ 4      │ task-master expand --id=2 --num=4   │
+│            │ 설계 및 Pri...          │        │        │ --prompt="Detail the steps to       │
+│            │                         │        │        │ implement the database schema using │
+│            │                         │        │        │ Prisma ORM, focusing on model       │
+│            │                         │        │        │ definitions, relationships between  │
+│            │                         │        │        │ entities, SQLite configuration, and │
+│            │                         │        │        │ initial migration setup."           │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 7          │ 클라이언트 측 게임 상태 │ 🟡 6   │ 4      │ task-master expand --id=7 --num=4   │
+│            │ 관리                    │        │        │ --prompt="Break down the            │
+│            │                         │        │        │ client-side state management        │
+│            │                         │        │        │ implementation into specific        │
+│            │                         │        │        │ components including SWR/React      │
+│            │                         │        │        │ Query setup, game state hooks,      │
+│            │                         │        │        │ optimistic updates, and             │
+│            │                         │        │        │ synchronization with Socket.io      │
+│            │                         │        │        │ events."                            │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 9          │ 기본 AI 상대 구현       │ 🟡 6   │ 4      │ task-master expand --id=9 --num=4   │
+│            │                         │        │        │ --prompt="Break down the basic AI   │
+│            │                         │        │        │ opponent implementation into        │
+│            │                         │        │        │ specific components including       │
+│            │                         │        │        │ difficulty levels, heuristic        │
+│            │                         │        │        │ evaluation functions, pattern       │
+│            │                         │        │        │ recognition algorithms, and AI      │
+│            │                         │        │        │ player interface."                  │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 16         │ 게임 기록 및 리플레이   │ 🟡 6   │ 4      │ task-master expand --id=16 --num=4  │
+│            │ 시스템                  │        │        │ --prompt="Detail the implementation │
+│            │                         │        │        │ steps for game recording and replay │
+│            │                         │        │        │ functionality, including database   │
+│            │                         │        │        │ schema, API endpoints, replay UI,   │
+│            │                         │        │        │ and export capabilities."           │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 19         │ 오류 처리 및 로깅       │ 🟡 6   │ 4      │ task-master expand --id=19 --num=4  │
+│            │ 시스템                  │        │        │ --prompt="Break down the error      │
+│            │                         │        │        │ handling and logging system         │
+│            │                         │        │        │ implementation into specific        │
+│            │                         │        │        │ components including centralized    │
+│            │                         │        │        │ error handling, error boundary      │
+│            │                         │        │        │ components, logging services, and   │
+│            │                         │        │        │ recovery flows."                    │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 10         │ 사용자 프로필 및 통계   │ 🟡 5   │ 4      │ task-master expand --id=10 --num=4  │
+│            │ 시스템                  │        │        │ --prompt="Detail the implementation │
+│            │                         │        │        │ steps for user profiles and         │
+│            │                         │        │        │ statistics, including profile page  │
+│            │                         │        │        │ creation, statistics tracking, game │
+│            │                         │        │        │ history, and ELO rating             │
+│            │                         │        │        │ calculations."                      │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 12         │ 채팅 시스템 구현        │ 🟡 5   │ 3      │ task-master expand --id=12 --num=3  │
+│            │                         │        │        │ --prompt="Detail the implementation │
+│            │                         │        │        │ steps for the chat system,          │
+│            │                         │        │        │ including UI components, Socket.io  │
+│            │                         │        │        │ event handling, and message history │
+│            │                         │        │        │ management."                        │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 14         │ Tailwind CSS를 사용한   │ 🟡 5   │ 4      │ task-master expand --id=14 --num=4  │
+│            │ 반...                   │        │        │ --prompt="Detail the implementation │
+│            │                         │        │        │ steps for responsive UI components  │
+│            │                         │        │        │ using Tailwind CSS, including theme │
+│            │                         │        │        │ configuration, layout design, game  │
+│            │                         │        │        │ controls, and dark/light mode       │
+│            │                         │        │        │ support."                           │
+├────────────┼─────────────────────────┼────────┼────────┼─────────────────────────────────────┤
+│ 17         │ 친구 시스템 및 소셜     │ 🟡 5   │ 3      │ task-master expand --id=17 --num=3  │
+│            │ 기능                    │        │        │ --prompt="Break down the friend     │
+│            │                         │        │        │ system implementation into specific │
+│            │                         │        │        │ components including friend         │
+│            │                         │        │        │ requests, friend list management,   │
+│            │                         │        │        │ online status indicators, and       │
+│            │                         │        │        │ direct game invitations."           │
+└────────────┴─────────────────────────┴────────┴────────┴─────────────────────────────────────┘
+
+╭────────────────────╮
+│  Simple Tasks (1)  │
+╰────────────────────╯
+┌─────┬────────────────────────────────────────┬────────┬──────────────────────────────────────────────────┐
+│ ID  │ Title                                  │ Score  │ Reasoning                                        │
+├─────┼────────────────────────────────────────┼────────┼──────────────────────────────────────────────────┤
+│ 1   │ 프로젝트 설정 및 NextJS 구성           │ 🟡 4   │ This is a standard project setup task with m...  │
+└─────┴────────────────────────────────────────┴────────┴──────────────────────────────────────────────────┘
+
+╭────────────────────────────────────────────────────────────────────────────╮
+│                                                                            │
+│   Suggested Actions:                                                       │
+│                                                                            │
+│   1. Expand all complex tasks: task-master expand --all                    │
+│   2. Expand a specific task: task-master expand --id=<id>                  │
+│   3. Regenerate with research: task-master analyze-complexity --research   │
+│                                                                            │
+╰────────────────────────────────────────────────────────────────────────────╯

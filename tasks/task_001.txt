@@ -1,11 +1,11 @@
 # Task ID: 1
 # Title: 프로젝트 설정 및 NextJS 구성
 # Status: pending
-# Dependencies: 없음
+# Dependencies: None
 # Priority: high
 # Description: 온라인 오목 게임을 위한 NextJS 프로젝트 초기화 및 필요한 의존성과 구성 설정
 # Details:
-'create-next-app'을 사용하여 새로운 NextJS 프로젝트를 생성합니다. TypeScript 지원을 위한 프로젝트 구성. 핵심 의존성 설치: Socket.io-client, Tailwind CSS, SWR/React Query. pages, components, API routes 디렉토리가 포함된 기본 프로젝트 구조 설정. 개발 및 프로덕션을 위한 환경 변수 구성.
+'create-next-app'을 사용하여 새로운 NextJS 프로젝트 생성. TypeScript 지원을 위한 프로젝트 구성. 핵심 의존성 설치: Socket.io-client, Tailwind CSS, SWR/React Query. pages, components, API routes 디렉토리가 포함된 기본 프로젝트 구조 설정. 개발 및 프로덕션을 위한 환경 변수 구성.
 
 # Test Strategy:
 애플리케이션이 오류 없이 빌드되고 실행되는지 확인. 모든 의존성이 올바르게 설치되고 접근 가능한지 확인.

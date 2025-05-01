@@ -86,10 +86,53 @@ databasePath: `C:\JnJ\Developments\_Playground\online-omock\sqlite\db.sqlite`
 
 ### task 확인
 
+> claude 비용 확인: `https://console.anthropic.com/settings/cost` 
+
 ```sh
 # 명령어 보기
 task-master
 
 # task 목록 보기
 task-master list
+```
+
+
+```sh
+# 복잡도(난이도) 분석
+task-master analyze-complexity
+tm analyze-complexity
+
+# 난이도 분석 보고서
+task-master complexity-report
+
+# 난이도 분석 보고서 저장
+task-master complexity-report > "C:\JnJ\Developments\_Playground\online-omock\_docs\tasks\analyze-complexity.txt"
+```
+
+### task 확장
+
+> cursor.ai
+
+```
+task-complexity-report 를 참고해서 복잡도가 높은 작업을 subtask로 확장해줘.
+```
+
+```sh
+task-master list --with-subtasks
+```
+
+### task 조정
+
+> cursor.ai
+```
+현재 전체적인 작업 목록에서 MVP 개발에 필요한 부분만 먼저 개발하고 싶어.
+MVP 개발에 불필요한 작업들은 나중에 처리할 작업으로 변경해줘.
+```
+
+```
+20도 MVP 이후로 연기해줘
+```
+
+```sh
+task-master list --with-subtasks
 ```

@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "generatedAt": "2025-05-01T07:40:06.955Z",
+    "tasksAnalyzed": 20,
+    "thresholdScore": 5,
+    "projectName": "Your Project Name",
+    "usedResearch": false
+  },
+  "complexityAnalysis": [
+    {
+      "taskId": 1,
+      "taskTitle": "프로젝트 설정 및 NextJS 구성",
+      "complexityScore": 4,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the NextJS project setup task into specific implementation steps, including project initialization, TypeScript configuration, dependency installation, and environment setup.",
+      "reasoning": "This is a standard project setup task with moderate complexity. It involves initializing NextJS with TypeScript, installing dependencies, and setting up the project structure. While straightforward for experienced developers, it requires careful attention to environment configuration."
+    },
+    {
+      "taskId": 2,
+      "taskTitle": "데이터베이스 스키마 설계 및 Prisma 설정",
+      "complexityScore": 6,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Detail the steps to implement the database schema using Prisma ORM, focusing on model definitions, relationships between entities, SQLite configuration, and initial migration setup.",
+      "reasoning": "Database schema design requires careful planning of relationships between multiple entities (User, Game, Move, GameRoom, Statistic). The complexity comes from defining proper relationships and ensuring the schema supports all game features."
+    },
+    {
+      "taskId": 3,
+      "taskTitle": "인증 시스템 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the authentication system implementation into specific components including NextAuth.js setup, provider configuration, API routes for user registration, session management, and guest authentication flow.",
+      "reasoning": "Authentication is inherently complex due to security concerns and multiple authentication flows (email/password, OAuth, guest access). It requires careful integration with the database and proper session management."
+    },
+    {
+      "taskId": 4,
+      "taskTitle": "핵심 게임 로직 구현",
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Detail the implementation steps for the core Gomoku game logic, including board representation, move validation, win condition checking, turn management, and rule variations.",
+      "reasoning": "Core game logic is highly complex as it requires implementing multiple algorithms (win condition checking across different directions, move validation) and handling various rule sets. This is a critical component that many other tasks depend on."
+    },
+    {
+      "taskId": 5,
+      "taskTitle": "HTML5 Canvas를 사용한 게임 보드 UI 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the game board UI implementation using HTML5 Canvas into components like board rendering, stone placement, interactive elements, responsive design, and visual feedback mechanisms.",
+      "reasoning": "Canvas-based UI requires significant work with graphics programming, handling different board sizes, implementing user interactions (mouse/touch), and ensuring responsive design. Visual feedback and animations add additional complexity."
+    },
+    {
+      "taskId": 6,
+      "taskTitle": "Socket.io 서버 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Detail the Socket.io server implementation steps, including server setup, connection handling, event handlers for game actions, room management, and error handling.",
+      "reasoning": "Real-time communication requires careful handling of connections, disconnections, and synchronization of game state. Managing rooms, handling authentication, and ensuring message validation adds significant complexity."
+    },
+    {
+      "taskId": 7,
+      "taskTitle": "클라이언트 측 게임 상태 관리",
+      "complexityScore": 6,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the client-side state management implementation into specific components including SWR/React Query setup, game state hooks, optimistic updates, and synchronization with Socket.io events.",
+      "reasoning": "Managing client-side state with real-time updates is challenging. It requires careful synchronization between socket events and local state, handling optimistic updates, and implementing error recovery mechanisms."
+    },
+    {
+      "taskId": 8,
+      "taskTitle": "게임 룸 시스템 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Detail the implementation steps for the game room system, including API routes for room management, room settings configuration, Socket.io event handling, and spectator mode functionality.",
+      "reasoning": "Game room management involves complex state handling across multiple users, including room creation, joining, settings configuration, and lifecycle management. Password protection and spectator mode add additional layers of complexity."
+    },
+    {
+      "taskId": 9,
+      "taskTitle": "기본 AI 상대 구현",
+      "complexityScore": 6,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the basic AI opponent implementation into specific components including difficulty levels, heuristic evaluation functions, pattern recognition algorithms, and AI player interface.",
+      "reasoning": "Even a basic AI requires significant algorithm development for pattern recognition and move evaluation. Implementing different difficulty levels and making the AI feel natural adds complexity."
+    },
+    {
+      "taskId": 10,
+      "taskTitle": "사용자 프로필 및 통계 시스템",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Detail the implementation steps for user profiles and statistics, including profile page creation, statistics tracking, game history, and ELO rating calculations.",
+      "reasoning": "This task involves creating user interfaces and database operations for profile management and statistics tracking. The ELO rating system adds some algorithmic complexity, but overall this is a moderate complexity task."
+    },
+    {
+      "taskId": 11,
+      "taskTitle": "실시간 멀티플레이어 게임 흐름",
+      "complexityScore": 8,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the real-time multiplayer game flow implementation into specific components including game session initialization, turn management, move validation and synchronization, and game completion handling.",
+      "reasoning": "Implementing a complete real-time multiplayer flow is highly complex as it requires perfect synchronization between players, handling edge cases like disconnections, and ensuring game state consistency. This is a critical task that ties together many other components."
+    },
+    {
+      "taskId": 12,
+      "taskTitle": "채팅 시스템 구현",
+      "complexityScore": 5,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Detail the implementation steps for the chat system, including UI components, Socket.io event handling, and message history management.",
+      "reasoning": "Chat functionality is a relatively standard feature in multiplayer games. While it requires real-time communication via Socket.io, the basic functionality is straightforward. Additional features like moderation and private messaging add some complexity."
+    },
+    {
+      "taskId": 13,
+      "taskTitle": "고급 AI 구현",
+      "complexityScore": 9,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the advanced AI implementation into specific algorithm components including minimax with alpha-beta pruning, pattern recognition, opening book development, and performance optimization.",
+      "reasoning": "Advanced AI algorithms like minimax with alpha-beta pruning are inherently complex and require significant algorithm development and optimization. The need for different difficulty levels and adaptive difficulty adds further complexity."
+    },
+    {
+      "taskId": 14,
+      "taskTitle": "Tailwind CSS를 사용한 반응형 UI 구현",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Detail the implementation steps for responsive UI components using Tailwind CSS, including theme configuration, layout design, game controls, and dark/light mode support.",
+      "reasoning": "UI implementation with Tailwind CSS is moderately complex, requiring design skills and attention to responsive behavior across different screen sizes. The variety of components needed (game controls, modals, navigation) adds to the workload."
+    },
+    {
+      "taskId": 15,
+      "taskTitle": "게임 규칙 변형 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the implementation of Gomoku rule variations into specific components including Renju rules, three-three restriction, and swap opening rules.",
+      "reasoning": "Implementing various rule sets requires careful modification of the core game logic. Each rule variation (Renju, three-three restriction) has its own complexity in terms of validation and enforcement, requiring deep understanding of the game."
+    },
+    {
+      "taskId": 16,
+      "taskTitle": "게임 기록 및 리플레이 시스템",
+      "complexityScore": 6,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Detail the implementation steps for game recording and replay functionality, including database schema, API endpoints, replay UI, and export capabilities.",
+      "reasoning": "Creating a robust replay system involves storing game moves, implementing UI controls for playback, and handling game state reconstruction. The annotation and export features add additional complexity."
+    },
+    {
+      "taskId": 17,
+      "taskTitle": "친구 시스템 및 소셜 기능",
+      "complexityScore": 5,
+      "recommendedSubtasks": 3,
+      "expansionPrompt": "Break down the friend system implementation into specific components including friend requests, friend list management, online status indicators, and direct game invitations.",
+      "reasoning": "The friend system involves standard social features like requests, lists, and status indicators. While not algorithmically complex, it requires careful database design and real-time status updates."
+    },
+    {
+      "taskId": 18,
+      "taskTitle": "랭킹 및 매치메이킹 시스템",
+      "complexityScore": 7,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Detail the implementation steps for the ELO-based ranking and matchmaking system, including rating calculations, matchmaking logic, leaderboard implementation, and skill tier definitions.",
+      "reasoning": "Implementing a fair and balanced matchmaking system requires complex algorithms for ELO calculations and player matching. The seasonal rankings and skill tiers add additional design and implementation complexity."
+    },
+    {
+      "taskId": 19,
+      "taskTitle": "오류 처리 및 로깅 시스템",
+      "complexityScore": 6,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the error handling and logging system implementation into specific components including centralized error handling, error boundary components, logging services, and recovery flows.",
+      "reasoning": "Creating a comprehensive error handling system requires careful planning to handle various failure scenarios across both client and server. The logging system needs to capture relevant information without impacting performance."
+    },
+    {
+      "taskId": 20,
+      "taskTitle": "배포 및 프로덕션 구성",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Detail the implementation steps for production deployment, including environment configuration, database migration, Socket.io scaling, security implementation, and monitoring setup.",
+      "reasoning": "Production deployment involves multiple technical considerations including security, performance, scaling, and monitoring. Configuring Socket.io for production scale and implementing proper database migration strategies adds significant complexity."
+    }
+  ]
+}

@@ -1,11 +1,84 @@
 # Task ID: 13
-# Title: 채팅 시스템 구현
-# Status: pending
-# Dependencies: 6,8
+# Title: 고급 AI 구현
+# Status: deferred
+# Dependencies: 9
 # Priority: low
-# Description: 게임방과 로비를 위한 실시간 채팅 시스템 구현
+# Description: 더 높은 난이도 수준을 위한 미니맥스 알고리즘과 알파-베타 가지치기를 사용한 AI 개선
 # Details:
-게임방과 로비를 위한 채팅 UI 컴포넌트 생성. 메시지 송수신을 위한 Socket.io 이벤트 구현. 사용자 접속 상태 표시기 추가. 메시지 기록 저장 및 검색 구현. 기본 중재 기능(메시지 필터링) 추가. 개인 메시지 기능 생성. 이모지 지원 구현.
+알파-베타 가지치기가 있는 미니맥스 알고리즘 구현. 위협 감지를 위한 고급 패턴 인식 생성. 일반적인 게임 시작을 위한 오프닝 북 개발. 가중치가 있는 패턴으로 위치 평가 추가. 난이도 수준(고급, 전문가) 구현. 더 깊은 검색 깊이를 위한 성능 최적화. 플레이어 실력 기반 적응형 난이도 추가.
 
 # Test Strategy:
-다양한 상황에서의 메시지 송수신 테스트. 메시지 기록 로딩 검증. 개인 메시지 기능 확인.
+알려진 강력한 위치에 대한 AI 성능 테스트. 검색 깊이 및 응답 시간 벤치마크. 적절한 도전을 위해 다양한 난이도 수준 비교.
+
+# Subtasks:
+## 1. Implement Minimax Algorithm with Alpha-Beta Pruning [deferred]
+### Dependencies: None
+### Description: Create the core minimax algorithm with alpha-beta pruning for efficient game tree search
+### Details:
+Implementation details:
+1. Create a new class `AdvancedAI` that extends the existing AI functionality
+2. Implement the minimax algorithm that recursively evaluates game states
+3. Add alpha-beta pruning to eliminate branches that won't affect the final decision
+4. Include configurable search depth parameters for different difficulty levels
+5. Create utility functions to generate and evaluate possible moves
+6. Test the implementation by comparing move selection against basic AI
+7. Verify that alpha-beta pruning reduces the number of evaluated nodes while producing identical results to a full minimax search
+
+## 2. Develop Position Evaluation with Weighted Patterns [deferred]
+### Dependencies: 13.1
+### Description: Create a sophisticated position evaluation system using weighted patterns to assess board positions
+### Details:
+Implementation details:
+1. Design a pattern recognition system that identifies common board configurations
+2. Create a database of patterns with associated weights indicating their strategic value
+3. Implement functions to detect patterns on the current board state
+4. Develop a scoring mechanism that combines pattern weights to produce a position evaluation
+5. Include pattern categories for corner control, edge stability, mobility, and threat detection
+6. Create unit tests for pattern recognition accuracy
+7. Test the evaluation function against known good/bad positions
+8. Integrate the position evaluation with the minimax algorithm from subtask 1
+
+## 3. Create Opening Book Development System [deferred]
+### Dependencies: 13.1, 13.2
+### Description: Implement an opening book system for standard game openings and early-game strategies
+### Details:
+Implementation details:
+1. Research and compile a database of strong opening moves and sequences
+2. Create a data structure to store opening sequences (could be a tree or directed graph)
+3. Implement a lookup system to retrieve moves from the opening book based on the current board state
+4. Add a mechanism to gracefully transition from book moves to minimax search when out of book
+5. Include multiple opening strategies for variety
+6. Create a system to record and analyze game outcomes to refine the opening book
+7. Test the opening book by verifying that the AI consistently selects strong opening moves
+8. Add configuration options to enable/disable opening book usage
+
+## 4. Implement Difficulty Levels and Performance Optimization [deferred]
+### Dependencies: 13.1, 13.2, 13.3
+### Description: Create distinct difficulty levels and optimize performance for deeper search depths
+### Details:
+Implementation details:
+1. Define clear parameters for different difficulty levels (Advanced, Expert)
+2. Configure search depth, evaluation complexity, and move randomization for each level
+3. Optimize the minimax algorithm using techniques like move ordering and transposition tables
+4. Implement iterative deepening to allow time-bounded searches
+5. Add parallel processing for move evaluation where applicable
+6. Profile and optimize the most computationally intensive parts of the evaluation
+7. Implement caching of evaluated positions to avoid redundant calculations
+8. Test performance improvements by measuring nodes evaluated per second
+9. Verify that higher difficulty levels consistently outperform lower levels
+
+## 5. Develop Adaptive Difficulty Based on Player Skill [deferred]
+### Dependencies: 13.1, 13.2, 13.3, 13.4
+### Description: Create a system that adjusts AI difficulty based on the player's performance
+### Details:
+Implementation details:
+1. Design a player skill rating system based on game outcomes and strategic decisions
+2. Create a mechanism to track and update player ratings over multiple games
+3. Implement an algorithm to dynamically adjust AI parameters based on the skill gap
+4. Add subtle adaptations like search depth adjustments, evaluation precision changes
+5. Create a smooth difficulty curve that provides appropriate challenge without obvious manipulation
+6. Include options for players to override adaptive difficulty
+7. Store player profiles to maintain consistent challenge across sessions
+8. Test the adaptive system with simulated players of different skill levels
+9. Verify that the AI appropriately scales difficulty up or down based on player performance
+

@@ -3,9 +3,9 @@
 # Status: pending
 # Dependencies: 1
 # Priority: high
-# Description: Prisma ORM과 SQLite를 사용하여 데이터베이스 스키마 설계 및 구현
+# Description: Prisma ORM과 SQLite를 사용한 데이터베이스 스키마 설계 및 구현
 # Details:
-Prisma ORM 설치 및 초기화. User, Game, Move, GameRoom, Statistic 모델을 포함하는 데이터베이스 스키마 설계. 마이그레이션 스크립트 생성 및 실행. Prisma Client 생성 및 NextJS와 통합. 기본 CRUD 작업을 위한 유틸리티 함수 구현.
+Prisma ORM 설치 및 초기화. User, Game, Move, GameRoom, Statistic 테이블을 위한 schema.prisma 파일 생성. 모델 간 관계 정의: User-Game (다대다), Game-Move (일대다), User-GameRoom (다대다), User-Statistic (일대일). SQLite를 데이터베이스 제공자로 설정. Prisma 클라이언트 생성 및 초기 마이그레이션 생성.
 
 # Test Strategy:
-마이그레이션이 성공적으로 실행되는지 확인. 모든 모델에 대한 기본 CRUD 작업 테스트. 관계 및 제약 조건이 올바르게 작동하는지 검증.
+데이터베이스 마이그레이션을 실행하고 스키마 생성 확인. 각 모델에 대한 기본 CRUD 작업을 테스트하여 적절한 기능 확인.
